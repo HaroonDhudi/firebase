@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Authntation</string>
+    <string name="please_enter_your_detail_to_login">Please Enter Your Detail To Login</string>
+</resources>

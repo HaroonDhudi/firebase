@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg11"
+    tools:context=".LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardElevation="6dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="25dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_title"
+                android:text="@string/please_enter_your_detail_to_login"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textSize="24sp"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_email_tv"
+                android:layout_below="@+id/login_title"
+                android:text="Email*"
+                android:layout_marginTop="50dp"
+                />
+
+            <EditText
+                android:id="@+id/login_email_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_email_tv"
+
+                android:hint="Enter Email"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_password_tv"
+                android:layout_below="@+id/login_email_ed"
+                android:text="Password*"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:id="@+id/login_password_ed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_password_tv"
+                android:hint="Enter Password"
+                android:inputType="numberPassword"
+                android:minHeight="48dp"
+                android:padding="8dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/all_login_btn"
+                android:layout_below="@+id/login_password_ed"
+                android:layout_marginTop="40dp"
+                android:text="LOGIN"
+                android:backgroundTint="#00B0FF"
+                android:textSize="20sp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/login_progress_bar"
+                style="?android:attr/progressBarStyleLarge"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/heading_tv"
+                android:layout_below="@+id/all_login_btn"
+                android:text="Create a new account?"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg_tv"
+                android:layout_below="@+id/heading_tv"
+                android:text="Register"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:textColor="#00B0FF"
+                android:gravity="center_horizontal" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>
